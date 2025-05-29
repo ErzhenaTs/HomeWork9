@@ -69,21 +69,25 @@ public class Main {
         expenses [2] = 1700;
         expenses [3] = 3220;
         expenses [4] = 5505;
-        int weeks = 4;
         int allExpenses = 0;
-        for (int i : expenses) {
-            allExpenses += i;
+        for (int i = 0; i < expenses.length; i ++) {
+            allExpenses += expenses[i];
                     }
-        double averageExpenses = (double) allExpenses / weeks;
+        double averageExpenses = (double) allExpenses / expenses.length;
         System.out.println("Средняя сумма трат за месяц составила " + averageExpenses + " рублей");
 
 
 
         System.out.println("Задача 4");
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        /*char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         for (int i = reverseFullName.length - 1; i >= 0; i--) {
             System.out.print(reverseFullName[i]);
-            }
+            }*/
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int name = reverseFullName.length - 1; name >= 0; name --) {
+            System.out.print(reverseFullName[name]);
+        }
+
 
 
 
